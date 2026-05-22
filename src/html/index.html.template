@@ -86,7 +86,7 @@
       </svg>
       <div id="ha-launch-screen-info-box" class="ha-launch-screen-spacer-bottom"></div>
     </div>
-    <home-assistant></home-assistant>
+    <neostronghold></neostronghold>
     <%= renderTemplate("_js_base.html.template") %>
     <%= renderTemplate("_preload_roboto.html.template") %>
     <script crossorigin="use-credentials">
