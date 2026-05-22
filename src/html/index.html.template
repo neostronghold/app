@@ -12,7 +12,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="neostronghold">
-    <meta name="msapplication-config" content="/static/icons/browserconfig.xml" />
+
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="application-name" content="neostronghold">
     <meta name="referrer" content="same-origin" />
