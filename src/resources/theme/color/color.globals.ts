@@ -421,6 +421,21 @@ export const darkColorStyles = css`
     --ha-button-neutral-light-color: #3c4063;
 
     --bar-box-shadow: 0 2px 12px var(--shadow-color);
+
+    /* Lovelace card glassmorphism */
+    --ha-card-background: hsl(228 25% 10% / 0.5);
+    --ha-card-backdrop-filter: blur(12px) saturate(160%);
+    --ha-card-border-radius: 16px;
+    --ha-card-border-width: 1px;
+    --ha-card-border-color: hsl(228 20% 18% / 0.5);
+    --ha-card-box-shadow: 0 8px 32px hsl(228 30% 6% / 0.4);
+    --ha-card-header-font-family: "Space Grotesk", sans-serif;
+    --ha-card-header-color: hsl(210 20% 93%);
+    --ha-card-header-font-size: 20px;
+
+    --restore-card-border-width: 0px;
+    --restore-card-box-shadow: none;
+    --restore-card-border-radius: 16px;
   }
 `;
 
