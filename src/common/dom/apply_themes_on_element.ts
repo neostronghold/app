@@ -35,7 +35,9 @@ export const applyThemesOnElement = (
     window.ShadyCSS.styleSubtree(element, styles);
   } else {
     for (const s in styles) {
-      element.style.setProperty(s, styles[s] || "");
+      if (Object.prototype.hasOwnProperty.call(styles, s)) {
+        element.style.setProperty(s, styles[s] || "");
+      }
     }
   }
 };

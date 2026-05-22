@@ -1,6 +1,5 @@
-import { LitElement, css } from "lit";
+import { LitElement, css, nothing } from "lit";
 import { customElement } from "lit/decorators";
-import { fireEvent } from "../../common/dom/fire_event";
 import type { HomeAssistant } from "../../types";
 
 @customElement("ha-pick-theme-row")
@@ -8,12 +7,14 @@ export class HaPickThemeRow extends LitElement {
   public hass!: HomeAssistant;
 
   protected render() {
-    return null;
+    return nothing;
   }
 
-  static get styles() {
-    return css``;
-  }
+  static readonly styles = css`
+    :host {
+      display: none;
+    }
+  `;
 }
 
 declare global {
