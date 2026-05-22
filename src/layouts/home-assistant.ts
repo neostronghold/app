@@ -22,7 +22,7 @@ import {
   supportsServiceWorker,
 } from "../util/register-service-worker";
 import "./ha-init-page";
-import "./neostronghold-main";
+import "./home-assistant-main";
 
 const useHash = __DEMO__;
 const curPath = () =>
@@ -61,10 +61,10 @@ export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
 
   protected renderHass() {
     return html`
-      <neostronghold-main
+      <home-assistant-main
         .hass=${this.hass}
         .route=${this._route}
-      ></neostronghold-main>
+      ></home-assistant-main>
     `;
   }
 

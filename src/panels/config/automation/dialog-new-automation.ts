@@ -37,7 +37,7 @@ import {
   type FuseWeightedKey,
   multiTermSearch,
 } from "../../../resources/fuseMultiTerm";
-import { mdiHomeAssistant } from "../../../resources/neostronghold-logo-svg";
+import { mdiHomeAssistant } from "../../../resources/home-assistant-logo-svg";
 import { haStyle, haStyleDialog } from "../../../resources/styles";
 import type { HomeAssistant } from "../../../types";
 import { documentationUrl } from "../../../util/documentation-url";

@@ -32,7 +32,7 @@ const cachedIcons: Record<string, string> = {};
 
 const CUSTOM_ICONS: Record<string, () => Promise<string>> = {
   "neostronghold": () =>
-    import("../resources/neostronghold-logo-svg").then(
+    import("../resources/home-assistant-logo-svg").then(
       (mod) => mod.mdiHomeAssistant
     ),
   "music-assistant": () =>

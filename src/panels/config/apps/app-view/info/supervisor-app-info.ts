@@ -92,7 +92,7 @@ import {
   showConfirmationDialog,
 } from "../../../../../dialogs/generic/show-dialog-box";
 import { showMoreInfoDialog } from "../../../../../dialogs/more-info/show-ha-more-info-dialog";
-import { mdiHomeAssistant } from "../../../../../resources/neostronghold-logo-svg";
+import { mdiHomeAssistant } from "../../../../../resources/home-assistant-logo-svg";
 import { haStyle } from "../../../../../resources/styles";
 import type { Route } from "../../../../../types";
 import { bytesToString } from "../../../../../util/bytes-to-string";

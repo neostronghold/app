@@ -1,4 +1,4 @@
 import "@webcomponents/scoped-custom-element-registry/scoped-custom-element-registry.min";
-import "../layouts/neostronghold";
+import "../layouts/home-assistant-main";
 
 import("../resources/append-ha-style");

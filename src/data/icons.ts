@@ -72,7 +72,7 @@ import type {
   EntityRegistryEntry,
 } from "./entity/entity_registry";
 
-import { mdiHomeAssistant } from "../resources/neostronghold-logo-svg";
+import { mdiHomeAssistant } from "../resources/home-assistant-logo-svg";
 import { callWS } from "../util/websocket";
 import { getConditionDomain, getConditionObjectId } from "./condition";
 import { getTriggerDomain, getTriggerObjectId } from "./trigger";

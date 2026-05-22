@@ -26,7 +26,7 @@ import { fetchHassioInfo } from "../../../data/hassio/supervisor";
 import { subscribeSystemHealthInfo } from "../../../data/system_health";
 import { showShortcutsDialog } from "../../../dialogs/shortcuts/show-shortcuts-dialog";
 import "../../../layouts/hass-subpage";
-import { mdiHomeAssistant } from "../../../resources/neostronghold-logo-svg";
+import { mdiHomeAssistant } from "../../../resources/home-assistant-logo-svg";
 import { haStyle } from "../../../resources/styles";
 import type { HomeAssistant, Route } from "../../../types";
 import { documentationUrl } from "../../../util/documentation-url";
