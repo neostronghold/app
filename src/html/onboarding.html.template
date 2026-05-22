@@ -6,7 +6,7 @@
     <%= renderTemplate("_style_base.html.template") %>
     <style>
       html {
-        background-color: var(--primary-background-color, #fafafa);
+        background-color: #0b0d17;
         color: var(--primary-text-color, #212121);
       }
       @media (prefers-color-scheme: dark) {

@@ -125,7 +125,7 @@ class HaConfigInfo extends LitElement {
             >
               <ha-logo-svg
                 title=${this.hass.localize(
-                  "ui.panel.config.info.neostronghold_logo"
+                  "ui.panel.config.info.home_assistant_logo"
                 )}
               >
               </ha-logo-svg>
