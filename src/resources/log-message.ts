@@ -2,7 +2,7 @@ import { fromError } from "stacktrace-js";
 
 // URL paths to remove from filenames and max stack trace lines for brevity
 const REMOVAL_PATHS =
-  /^\/(?:home-assistant\/frontend\/[^/]+|unknown|\/{2}\.)\//;
+  /^\/(?:neostronghold\/frontend\/[^/]+|unknown|\/{2}\.)\//;
 const MAX_STACK_FRAMES = 10;
 
 // Order matters: more specific UA tokens must come before generic ones

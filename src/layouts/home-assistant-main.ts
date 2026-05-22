@@ -22,7 +22,7 @@ declare global {
   }
 }
 
-@customElement("home-assistant-main")
+@customElement("neostronghold-main")
 export class HomeAssistantMain extends LitElement {
   @property({ attribute: false }) public hass!: HomeAssistant;
 
@@ -175,6 +175,6 @@ export class HomeAssistantMain extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "home-assistant-main": HomeAssistantMain;
+    "neostronghold-main": HomeAssistantMain;
   }
 }

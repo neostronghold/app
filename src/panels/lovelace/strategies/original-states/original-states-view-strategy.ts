@@ -75,7 +75,7 @@ export class OriginalStatesViewStrategy extends ReactiveElement {
         cards: [
           {
             type: "empty-state",
-            icon: "mdi:home-assistant",
+            icon: "mdi:neostronghold",
             icon_color: "primary",
             content_only: true,
             title: hass.localize(

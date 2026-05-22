@@ -11,8 +11,8 @@
     }
   ],
   "lang": "en-US",
-  "name": "Home Assistant Cast",
-  "short_name": "HA Cast",
+  "name": "neostronghold Cast",
+  "short_name": "neostronghold",
   "start_url": "/?homescreen=1",
   "theme_color": "#009ac7"
 }

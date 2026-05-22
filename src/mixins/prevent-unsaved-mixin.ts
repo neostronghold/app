@@ -7,7 +7,7 @@ export const PreventUnsavedMixin = <T extends Constructor<LitElement>>(
 ) =>
   class extends superClass {
     private _handleClick = async (e: MouseEvent) => {
-      // get the right target, otherwise the composedPath would return <home-assistant> in the new event
+      // get the right target, otherwise the composedPath would return <neostronghold> in the new event
       const target = e.composedPath()[0];
       if (!isNavigationClick(e)) {
         return;

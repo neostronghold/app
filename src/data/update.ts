@@ -83,9 +83,9 @@ export const updateReleaseNotes = (hass: HomeAssistant, entityId: string) =>
     entity_id: entityId,
   });
 
-const HOME_ASSISTANT_CORE_TITLE = "Home Assistant Core";
-const HOME_ASSISTANT_SUPERVISOR_TITLE = "Home Assistant Supervisor";
-const HOME_ASSISTANT_OS_TITLE = "Home Assistant Operating System";
+const HOME_ASSISTANT_CORE_TITLE = "neostronghold Core";
+const HOME_ASSISTANT_SUPERVISOR_TITLE = "neostronghold Supervisor";
+const HOME_ASSISTANT_OS_TITLE = "neostronghold Operating System";
 
 export const filterUpdateEntities = (
   entities: HassEntities,
@@ -235,8 +235,8 @@ export const computeUpdateStateDisplay = (
 
 export type UpdateType =
   | "addon"
-  | "home_assistant"
-  | "home_assistant_os"
+  | "neostronghold"
+  | "neostronghold_os"
   | "generic";
 
 export const getUpdateType = (
@@ -252,11 +252,11 @@ export const getUpdateType = (
 
   const title = stateObj.attributes.title || "";
   if (title === HOME_ASSISTANT_CORE_TITLE) {
-    return "home_assistant";
+    return "neostronghold";
   }
 
   if (title === HOME_ASSISTANT_OS_TITLE) {
-    return "home_assistant_os";
+    return "neostronghold_os";
   }
 
   if (title !== HOME_ASSISTANT_SUPERVISOR_TITLE) {

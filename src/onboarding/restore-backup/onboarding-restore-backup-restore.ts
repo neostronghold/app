@@ -78,7 +78,7 @@ class OnboardingRestoreBackupRestore extends LitElement {
         : html`
             <ha-alert alert-type="error">
               ${this.localize(
-                "ui.panel.page-onboarding.restore.details.home_assistant_missing"
+                "ui.panel.page-onboarding.restore.details.neostronghold_missing"
               )}
             </ha-alert>
           `}

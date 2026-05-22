@@ -49,7 +49,7 @@ export class AssistPipelineDetailConversation extends LitElement {
         });
       }
 
-      if (engine !== "conversation.home_assistant") {
+      if (engine !== "conversation.neostronghold") {
         fields.push({
           name: "prefer_local_intents",
           default: true,

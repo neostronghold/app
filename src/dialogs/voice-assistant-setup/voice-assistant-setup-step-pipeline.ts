@@ -290,7 +290,7 @@ export class HaVoiceAssistantSetupStepPipeline extends LitElement {
 
       let cloudPipeline = pipelines.pipelines.find(
         (pipeline) =>
-          pipeline.conversation_engine === "conversation.home_assistant" &&
+          pipeline.conversation_engine === "conversation.neostronghold" &&
           pipeline.tts_engine === cloudTtsEntityId &&
           pipeline.stt_engine === cloudSttEntityId &&
           (!useLanguage ||
@@ -304,7 +304,7 @@ export class HaVoiceAssistantSetupStepPipeline extends LitElement {
             this.language || this.hass.config.language,
             this.hass.config.country || undefined
           )
-        ).agents.find((agnt) => agnt.id === "conversation.home_assistant");
+        ).agents.find((agnt) => agnt.id === "conversation.neostronghold");
 
         if (!agent?.supported_languages.length) {
           return false;
@@ -340,19 +340,19 @@ export class HaVoiceAssistantSetupStepPipeline extends LitElement {
           return false;
         }
 
-        let pipelineName = "Home Assistant Cloud";
+        let pipelineName = "neostronghold Cloud";
         let i = 1;
         while (
           pipelines.pipelines.find((pipeline) => pipeline.name === pipelineName)
         ) {
-          pipelineName = `Home Assistant Cloud ${i}`;
+          pipelineName = `neostronghold Cloud ${i}`;
           i++;
         }
 
         cloudPipeline = await createAssistPipeline(this.hass, {
           name: pipelineName,
           language: (this.language || this.hass.config.language).split("-")[0],
-          conversation_engine: "conversation.home_assistant",
+          conversation_engine: "conversation.neostronghold",
           conversation_language: agent.supported_languages[0],
           stt_engine: cloudSttEntityId,
           stt_language: sttEngine.supported_languages[0],

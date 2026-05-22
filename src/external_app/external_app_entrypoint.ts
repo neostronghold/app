@@ -9,7 +9,7 @@ import { fireEvent } from "../common/dom/fire_event";
 import { mainWindow } from "../common/dom/get_main_window";
 import { navigate } from "../common/navigate";
 import { showAutomationEditor } from "../data/automation";
-import type { HomeAssistantMain } from "../layouts/home-assistant-main";
+import type { HomeAssistantMain } from "../layouts/neostronghold-main";
 import type {
   EMIncomingMessageBarCodeScanAborted,
   EMIncomingMessageBarCodeScanResult,

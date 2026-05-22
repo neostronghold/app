@@ -195,7 +195,7 @@ class HaConfigBackupSettings extends LitElement {
                 .hass=${this.hass}
                 .value=${this._dataConfig}
                 @value-changed=${this._dataConfigChanged}
-                force-home-assistant
+                force-neostronghold
                 hide-addon-version
               ></ha-backup-config-data>
             </div>
@@ -260,7 +260,7 @@ class HaConfigBackupSettings extends LitElement {
                       >${this.hass.localize(
                         "ui.panel.config.backup.settings.locations.ha_cloud_backup",
                         {
-                          home_assistant_cloud: "Home Assistant Cloud",
+                          neostronghold_cloud: "neostronghold Cloud",
                         }
                       )}</span
                     >

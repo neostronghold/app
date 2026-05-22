@@ -64,7 +64,7 @@ class HaPanelApp extends LitElement {
   private _iframeRef = createRef<HTMLIFrameElement>();
 
   /**
-   * iFrames can subscribe to Home Assistant specific updates
+   * iFrames can subscribe to neostronghold specific updates
    */
   private _iframeSubscribeUpdates = false;
 
@@ -386,15 +386,15 @@ class HaPanelApp extends LitElement {
     const { type, ...data } = event.data;
 
     switch (type) {
-      case "home-assistant/navigate":
+      case "neostronghold/navigate":
         navigate(data.path, data.options);
         break;
 
-      case "home-assistant/toggle-menu":
+      case "neostronghold/toggle-menu":
         this._toggleMenu();
         break;
 
-      case "home-assistant/subscribe-properties":
+      case "neostronghold/subscribe-properties":
         this._iframeSubscribeUpdates = true;
         this._sendPropertiesToIframe();
         if (data.kioskMode && !this.hass.kioskMode) {
@@ -403,7 +403,7 @@ class HaPanelApp extends LitElement {
         }
         break;
 
-      case "home-assistant/unsubscribe-properties":
+      case "neostronghold/unsubscribe-properties":
         this._iframeSubscribeUpdates = false;
         if (this._enabledKioskMode) {
           fireEvent(window, "hass-kiosk-mode", { enable: false });
@@ -420,7 +420,7 @@ class HaPanelApp extends LitElement {
 
     this._iframeRef.value.contentWindow.postMessage(
       {
-        type: "home-assistant/properties",
+        type: "neostronghold/properties",
         narrow: this.narrow,
         route: this._computeRouteTail(this.route),
       },

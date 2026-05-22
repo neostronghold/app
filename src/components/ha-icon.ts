@@ -31,8 +31,8 @@ const debouncedWriteCache = debounce(() => writeCache(chunks), 2000);
 const cachedIcons: Record<string, string> = {};
 
 const CUSTOM_ICONS: Record<string, () => Promise<string>> = {
-  "home-assistant": () =>
-    import("../resources/home-assistant-logo-svg").then(
+  "neostronghold": () =>
+    import("../resources/neostronghold-logo-svg").then(
       (mod) => mod.mdiHomeAssistant
     ),
   "music-assistant": () =>

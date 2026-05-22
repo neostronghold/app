@@ -171,7 +171,7 @@ class DialogConfigEntrySystemOptions extends LitElement {
       if (result.require_restart) {
         await showAlertDialog(this, {
           text: this.hass.localize(
-            "ui.dialogs.config_entry_system_options.restart_home_assistant"
+            "ui.dialogs.config_entry_system_options.restart_neostronghold"
           ),
         });
       }

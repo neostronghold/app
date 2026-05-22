@@ -440,7 +440,7 @@ export const geneateEmergencyKitFileName = (
   hass: HomeAssistant,
   append?: string
 ) =>
-  `home_assistant_backup_emergency_kit_${append ? `${append}_` : ""}${formatDateTimeNumeric(new Date(), hass.locale, hass.config).replace(",", "").replace(" ", "_")}.txt`;
+  `neostronghold_backup_emergency_kit_${append ? `${append}_` : ""}${formatDateTimeNumeric(new Date(), hass.locale, hass.config).replace(",", "").replace(" ", "_")}.txt`;
 
 export const downloadEmergencyKit = (
   hass: HomeAssistant,

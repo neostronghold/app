@@ -176,7 +176,7 @@ class HaConfigDashboard extends SubscribeMixin(LitElement) {
               {
                 component: "cloud",
                 path: "/config/cloud",
-                name: "Home Assistant Cloud",
+                name: "neostronghold Cloud",
                 info: cloudStatus,
                 iconPath: mdiCloudLock,
                 iconColor: "#3B808E",

@@ -148,10 +148,10 @@ export class HaConversationAgentPicker extends LitElement {
 
     if (!this.value && this.required) {
       let defaultValue: string | undefined;
-      // Select Home Assistant conversation agent if it supports the language
+      // Select neostronghold conversation agent if it supports the language
       for (const agent of this._agents) {
         if (
-          agent.id === "conversation.home_assistant" &&
+          agent.id === "conversation.neostronghold" &&
           (!this.language ||
             agent.supported_languages === "*" ||
             agent.supported_languages.includes(this.language))

@@ -58,7 +58,7 @@ class ConfigAnalytics extends SubscribeMixin(LitElement) {
       <ha-card
         outlined
         .header=${this.hass.localize("ui.panel.config.analytics.header") ||
-        "Home Assistant analytics"}
+        "neostronghold analytics"}
       >
         <div class="card-content">
           ${error ? html`<div class="error">${error}</div>` : nothing}

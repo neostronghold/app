@@ -4,7 +4,7 @@ title: Input
 
 # Input `<ha-input>`
 
-A text input component supporting Home Assistant theming and validation, based on webawesome input.
+A text input component supporting neostronghold theming and validation, based on webawesome input.
 Supports multiple input types including text, number, password, email, search, and more.
 
 ## Implementation

@@ -339,7 +339,7 @@ class DialogBackupOnboarding extends LitElement implements HassDialog {
           <div class="welcome">
             <img
               src="/static/images/voice-assistant/hi.png"
-              alt="Casita Home Assistant logo"
+              alt="Casita neostronghold logo"
             />
             <h1>
               ${this.hass.localize(
@@ -446,7 +446,7 @@ class DialogBackupOnboarding extends LitElement implements HassDialog {
             .hass=${this.hass}
             .value=${this._dataConfig(this._config)}
             @value-changed=${this._dataChanged}
-            force-home-assistant
+            force-neostronghold
             hide-addon-version
           ></ha-backup-config-data>
         `;

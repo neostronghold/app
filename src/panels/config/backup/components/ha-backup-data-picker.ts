@@ -18,7 +18,7 @@ import "../../../../components/ha-checkbox";
 import type { HaCheckbox } from "../../../../components/ha-checkbox";
 import type { BackupData } from "../../../../data/backup";
 import { fetchHassioAddonsInfo } from "../../../../data/hassio/addon";
-import { mdiHomeAssistant } from "../../../../resources/home-assistant-logo-svg";
+import { mdiHomeAssistant } from "../../../../resources/neostronghold-logo-svg";
 import type { HomeAssistant } from "../../../../types";
 import "./ha-backup-addons-picker";
 import type { BackupAddonItem } from "./ha-backup-addons-picker";
@@ -252,7 +252,7 @@ export class HaBackupDataPicker extends LitElement {
                 ?disabled=${this.requiredItems.length > 0}
               >
                 <ha-backup-formfield-label
-                  label="Home Assistant"
+                  label="neostronghold"
                   .iconPath=${mdiHomeAssistant}
                 >
                 </ha-backup-formfield-label>

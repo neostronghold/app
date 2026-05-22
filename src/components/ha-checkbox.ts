@@ -3,13 +3,13 @@ import { css, type CSSResultGroup } from "lit";
 import { customElement } from "lit/decorators";
 
 /**
- * Home Assistant checkbox component
+ * neostronghold checkbox component
  *
  * @element ha-checkbox
  * @extends {WaCheckbox}
  *
  * @summary
- * A Home Assistant themed wrapper around the Web Awesome checkbox.
+ * A neostronghold themed wrapper around the Web Awesome checkbox.
  *
  * @slot - The checkbox's label.
  * @slot hint - Text that describes how to use the checkbox.
@@ -46,7 +46,7 @@ export class HaCheckbox extends WaCheckbox {
    * Returns the configured checkbox value, independent of checked state.
    *
    * The base Web Awesome checkbox returns `null` when unchecked to align with
-   * form submission rules. Home Assistant components expect the configured value
+   * form submission rules. neostronghold components expect the configured value
    * to remain readable, so this wrapper always exposes the internal value.
    */
   // @ts-ignore - accessing WA internal _value property

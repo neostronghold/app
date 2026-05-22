@@ -262,16 +262,16 @@ const generateServerControlCommands = (
 
   return serverActions.map((action, index) => {
     const primary = hass.localize(
-      "ui.dialogs.quick-bar.commands.home_assistant_control.perform_action",
+      "ui.dialogs.quick-bar.commands.neostronghold_control.perform_action",
       {
         action: hass.localize(
-          `ui.dialogs.quick-bar.commands.home_assistant_control.${action}`
+          `ui.dialogs.quick-bar.commands.neostronghold_control.${action}`
         ),
       }
     );
 
     const secondary = hass.localize(
-      "ui.dialogs.quick-bar.commands.types.home_assistant_control"
+      "ui.dialogs.quick-bar.commands.types.neostronghold_control"
     );
 
     return {

@@ -63,7 +63,7 @@ class DialogCloudAlreadyConnected extends LitElement {
           </span>
           <b>
             ${this.hass.localize(
-              "ui.panel.config.cloud.dialog_already_connected.other_home_assistant"
+              "ui.panel.config.cloud.dialog_already_connected.other_neostronghold"
             )}
           </b>
         </div>

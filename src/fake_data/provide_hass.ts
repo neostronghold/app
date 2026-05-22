@@ -210,7 +210,7 @@ export const provideHass = (
   const noop = () => undefined;
 
   const hassObj: MockHomeAssistant = {
-    // Home Assistant properties
+    // neostronghold properties
     auth: {
       data: {
         hassUrl: location.origin,

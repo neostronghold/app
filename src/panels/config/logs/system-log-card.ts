@@ -234,7 +234,7 @@ export class SystemLogCard extends LitElement {
   private async _downloadLogs() {
     const timeString = new Date().toISOString().replace(/:/g, "-");
     const downloadUrl = getErrorLogDownloadUrl(this.hass);
-    const logFileName = `home-assistant_${timeString}.log`;
+    const logFileName = `neostronghold_${timeString}.log`;
     const signedUrl = await getSignedPath(this.hass, downloadUrl);
     fileDownload(signedUrl.path, logFileName);
   }

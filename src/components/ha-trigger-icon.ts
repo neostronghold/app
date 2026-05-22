@@ -22,7 +22,7 @@ import { customElement, property } from "lit/decorators";
 import { until } from "lit/directives/until";
 import { computeDomain } from "../common/entity/compute_domain";
 import { FALLBACK_DOMAIN_ICONS, triggerIcon } from "../data/icons";
-import { mdiHomeAssistant } from "../resources/home-assistant-logo-svg";
+import { mdiHomeAssistant } from "../resources/neostronghold-logo-svg";
 import type { HomeAssistant } from "../types";
 import "./ha-icon";
 import "./ha-svg-icon";

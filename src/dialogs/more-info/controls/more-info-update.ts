@@ -85,7 +85,7 @@ class MoreInfoUpdate extends LitElement {
   }
 
   private _isHaOrOsUpdate(type: UpdateType): boolean {
-    return ["home_assistant", "home_assistant_os"].includes(type);
+    return ["neostronghold", "neostronghold_os"].includes(type);
   }
 
   private _computeCreateBackupTexts():
@@ -353,7 +353,7 @@ class MoreInfoUpdate extends LitElement {
         const type = getUpdateType(this.stateObj!, this._entitySources!);
         if (
           isComponentLoaded(this.hass.config, "hassio") &&
-          ["addon", "home_assistant", "home_assistant_os"].includes(type)
+          ["addon", "neostronghold", "neostronghold_os"].includes(type)
         ) {
           this._fetchUpdateBackupConfig(type);
         }

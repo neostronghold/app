@@ -63,7 +63,7 @@ export class HaVoiceAssistantSetupStepLocal extends LitElement {
       ${this._state === "INSTALLING"
         ? html`<img
               src="/static/images/voice-assistant/update.png"
-              alt="Casita Home Assistant loading logo"
+              alt="Casita neostronghold loading logo"
             />
             <h1>
               ${this.hass.localize(
@@ -82,7 +82,7 @@ export class HaVoiceAssistantSetupStepLocal extends LitElement {
         : this._state === "ERROR"
           ? html`<img
                 src="/static/images/voice-assistant/error.png"
-                alt="Casita Home Assistant error logo"
+                alt="Casita neostronghold error logo"
               />
               <h1>
                 ${this.hass.localize(
@@ -119,7 +119,7 @@ export class HaVoiceAssistantSetupStepLocal extends LitElement {
           : this._state === "NOT_SUPPORTED"
             ? html`<img
                   src="/static/images/voice-assistant/error.png"
-                  alt="Casita Home Assistant error logo"
+                  alt="Casita neostronghold error logo"
                 />
                 <h1>
                   ${this.hass.localize(
@@ -374,7 +374,7 @@ export class HaVoiceAssistantSetupStepLocal extends LitElement {
 
     let localPipeline = pipelines.pipelines.find(
       (pipeline) =>
-        pipeline.conversation_engine === "conversation.home_assistant" &&
+        pipeline.conversation_engine === "conversation.neostronghold" &&
         pipeline.tts_engine &&
         ttsEntityIds.includes(pipeline.tts_engine) &&
         pipeline.stt_engine &&
@@ -409,7 +409,7 @@ export class HaVoiceAssistantSetupStepLocal extends LitElement {
         this.language || this.hass.config.language,
         this.hass.config.country || undefined
       )
-    ).agents.find((agnt) => agnt.id === "conversation.home_assistant");
+    ).agents.find((agnt) => agnt.id === "conversation.neostronghold");
 
     if (!agent?.supported_languages.length) {
       throw new Error(
@@ -465,7 +465,7 @@ export class HaVoiceAssistantSetupStepLocal extends LitElement {
     return createAssistPipeline(this.hass, {
       name: pipelineName,
       language: this.language.split("-")[0],
-      conversation_engine: "conversation.home_assistant",
+      conversation_engine: "conversation.neostronghold",
       conversation_language: agent.supported_languages[0],
       stt_engine: sttEntityId,
       stt_language: sttEngine.supported_languages[0],

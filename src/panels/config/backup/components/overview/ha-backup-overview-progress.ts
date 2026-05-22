@@ -31,7 +31,7 @@ interface ProgressSegment {
   flex: number;
 }
 
-const HA_STAGES: CreateBackupStage[] = ["home_assistant"];
+const HA_STAGES: CreateBackupStage[] = ["neostronghold"];
 
 const ADDON_STAGES: CreateBackupStage[] = [
   "addons",
@@ -179,7 +179,7 @@ export class HaBackupOverviewProgress extends LitElement {
         },
         {
           label: this.hass.localize(
-            "ui.panel.config.backup.overview.progress.segments.home_assistant"
+            "ui.panel.config.backup.overview.progress.segments.neostronghold"
           ),
           state: this._getSegmentState(2, currentGroupIndex),
           flex: 2,
@@ -212,7 +212,7 @@ export class HaBackupOverviewProgress extends LitElement {
       },
       {
         label: this.hass.localize(
-          "ui.panel.config.backup.overview.progress.segments.home_assistant"
+          "ui.panel.config.backup.overview.progress.segments.neostronghold"
         ),
         state: this._getSegmentState(2, currentGroupIndex),
         flex: 2,

@@ -72,8 +72,8 @@
     }
   ],
   "lang": "en-US",
-  "name": "Home Assistant Demo",
-  "short_name": "HA Demo",
+  "name": "neostronghold Demo",
+  "short_name": "neostronghold",
   "start_url": "/?homescreen=1",
   "theme_color": "#009ac7"
 }

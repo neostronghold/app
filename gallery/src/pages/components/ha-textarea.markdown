@@ -4,7 +4,7 @@ title: Textarea
 
 # Textarea `<ha-textarea>`
 
-A multiline text input component supporting Home Assistant theming and validation, based on webawesome textarea.
+A multiline text input component supporting neostronghold theming and validation, based on webawesome textarea.
 Supports autogrow, hints, validation, and both material and outlined appearances.
 
 ## Implementation

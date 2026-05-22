@@ -1,10 +1,10 @@
 {
-  "description": "A frontend for Home Assistant",
+  "description": "neostronghold smart home frontend",
   "repository": {
     "type": "git",
-    "url": "https://github.com/home-assistant/frontend"
+    "url": "https://github.com/neostronghold/app"
   },
-  "name": "home-assistant-frontend",
+  "name": "neostronghold-frontend",
   "version": "1.0.0",
   "scripts": {
     "build": "script/build_frontend",
@@ -23,7 +23,7 @@
     "test": "vitest run --config test/vitest.config.ts",
     "test:coverage": "vitest run --config test/vitest.config.ts --coverage"
   },
-  "author": "Paulus Schoutsen <Paulus@PaulusSchoutsen.nl> (http://paulusschoutsen.nl)",
+  "author": "NeoParadise <hello@neostronghold.com>",
   "license": "Apache-2.0",
   "type": "module",
   "dependencies": {

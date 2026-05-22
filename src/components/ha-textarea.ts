@@ -10,13 +10,13 @@ import { stopPropagation } from "../common/dom/stop_propagation";
 import { WaInputMixin, waInputStyles } from "./input/wa-input-mixin";
 
 /**
- * Home Assistant textarea component
+ * neostronghold textarea component
  *
  * @element ha-textarea
  * @extends {LitElement}
  *
  * @summary
- * A multi-line text input component supporting Home Assistant theming and validation, based on webawesome textarea.
+ * A multi-line text input component supporting neostronghold theming and validation, based on webawesome textarea.
  *
  * @slot label - Custom label content. Overrides the `label` property.
  * @slot hint - Custom hint content. Overrides the `hint` property.

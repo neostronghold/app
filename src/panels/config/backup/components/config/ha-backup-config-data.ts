@@ -69,7 +69,7 @@ declare global {
 class HaBackupConfigData extends LitElement {
   @property({ attribute: false }) public hass!: HomeAssistant;
 
-  @property({ type: Boolean, attribute: "force-home-assistant" })
+  @property({ type: Boolean, attribute: "force-neostronghold" })
   public forceHomeAssistant = false;
 
   @property({ attribute: "hide-addon-version", type: Boolean })

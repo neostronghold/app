@@ -17,7 +17,7 @@ export type CreateBackupStage =
   | "docker_config"
   | "finishing_file"
   | "folders"
-  | "home_assistant"
+  | "neostronghold"
   | "upload_to_agents";
 
 export type CreateBackupState = "completed" | "failed" | "in_progress";
@@ -33,12 +33,12 @@ export type RestoreBackupStage =
   | "app_repositories"
   | "apps"
   | "await_app_restarts"
-  | "await_home_assistant_restart"
-  | "check_home_assistant"
+  | "await_neostronghold_restart"
+  | "check_neostronghold"
   | "docker_config"
   | "download_from_agent"
   | "folders"
-  | "home_assistant"
+  | "neostronghold"
   | "remove_delta_addons"
   | "remove_delta_apps";
 

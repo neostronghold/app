@@ -40,7 +40,7 @@ class DialogApp extends LitElement {
           <a
             target="_blank"
             rel="noreferrer noopener"
-            href="https://apps.apple.com/app/home-assistant/id1099568401?mt=8"
+            href="https://apps.apple.com/app/neostronghold/id1099568401?mt=8"
           >
             <img
               loading="lazy"

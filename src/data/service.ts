@@ -19,6 +19,6 @@ export const serviceCallWillDisconnect = (
   (domain === "update" &&
     service === "install" &&
     [
-      "update.home_assistant_core_update",
-      "update.home_assistant_operating_system_update",
+      "update.neostronghold_core_update",
+      "update.neostronghold_operating_system_update",
     ].includes(serviceData?.entity_id));

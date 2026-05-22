@@ -43,7 +43,7 @@ const SCHEMAS: { name: string; triggers: Trigger[] }[] = [
   },
 
   {
-    name: "Home Assistant",
+    name: "neostronghold",
     triggers: [{ ...HaHassTrigger.defaultConfig }],
   },
 

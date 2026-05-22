@@ -383,7 +383,7 @@ class ErrorLogCard extends LitElement {
       const logFileName =
         this.provider && this.provider !== "core"
           ? `${this.provider}_${timeString}.log`
-          : `home-assistant_${timeString}.log`;
+          : `neostronghold_${timeString}.log`;
       const signedUrl = await getSignedPath(this.hass, downloadUrl);
       fileDownload(signedUrl.path, logFileName);
     }

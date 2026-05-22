@@ -1,30 +1,23 @@
-# Home Assistant Frontend
+# neostronghold Frontend
 
-This is the repository for the official [Home Assistant](https://home-assistant.io) frontend.
+The frontend for [neostronghold](https://neostronghold.com) — a premium open-source smart home platform.
 
-[![Screenshot of the frontend](https://raw.githubusercontent.com/home-assistant/frontend/master/docs/screenshot.png)](https://demo.home-assistant.io/)
-
-- [View demo of Home Assistant](https://demo.home-assistant.io/)
-- [More information about Home Assistant](https://home-assistant.io)
-- [Frontend development instructions](https://developers.home-assistant.io/docs/frontend/development/)
+Built with Lit, TypeScript, shadcn/ui, and Tailwind CSS v4.
 
 ## Development
 
-- Initial setup: `script/setup`
-- Development: [Instructions](https://developers.home-assistant.io/docs/frontend/development/)
-- Production build: `script/build_frontend`
-- Gallery: `cd gallery && script/develop_gallery`
+```bash
+script/setup
+script/develop
+```
 
-## Frontend development
+The dev server will be available at `http://localhost:8124` and connects to a HA Core instance at `http://localhost:8123`.
 
-### Classic environment
-
-A complete guide can be found at the following [link](https://www.home-assistant.io/developers/frontend/). It describes a short guide for the build of project.
+To point at a different Core instance:
+```bash
+script/develop_and_serve -c http://192.168.2.182:8123
+```
 
 ## License
 
-Home Assistant is open-source and Apache 2 licensed. Feel free to browse the repository, learn and reuse parts in your own projects.
-
-We use [BrowserStack](https://www.browserstack.com) to test Home Assistant on a large variety of devices.
-
-[![Home Assistant - A project from the Open Home Foundation](https://www.openhomefoundation.org/badges/home-assistant.png)](https://www.openhomefoundation.org/)
+Apache 2.0

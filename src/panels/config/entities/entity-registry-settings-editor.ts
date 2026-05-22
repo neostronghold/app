@@ -1067,7 +1067,7 @@ export class EntityRegistrySettingsEditor extends LitElement {
     let close = true;
     // eslint-disable-next-line @typescript-eslint/no-this-alias
     let parent: HTMLElement = this;
-    while (parent?.localName !== "home-assistant") {
+    while (parent?.localName !== "neostronghold") {
       parent = (parent.getRootNode() as ShadowRoot).host as HTMLElement;
     }
 

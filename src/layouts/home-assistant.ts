@@ -22,7 +22,7 @@ import {
   supportsServiceWorker,
 } from "../util/register-service-worker";
 import "./ha-init-page";
-import "./home-assistant-main";
+import "./neostronghold-main";
 
 const useHash = __DEMO__;
 const curPath = () =>
@@ -33,7 +33,7 @@ const panelUrl = (path: string) => {
   return dividerPos === -1 ? path.substring(1) : path.substring(1, dividerPos);
 };
 
-@customElement("home-assistant")
+@customElement("neostronghold")
 export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
   @state() private _route: Route;
 
@@ -61,10 +61,10 @@ export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
 
   protected renderHass() {
     return html`
-      <home-assistant-main
+      <neostronghold-main
         .hass=${this.hass}
         .route=${this._route}
-      ></home-assistant-main>
+      ></neostronghold-main>
     `;
   }
 
@@ -141,7 +141,7 @@ export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
     });
 
     // Render launch screen info box (loading data / error message)
-    // if Home Assistant is not loaded yet.
+    // if neostronghold is not loaded yet.
     if (this.render !== this.renderHass) {
       this._renderInitInfo(false);
     }
@@ -277,7 +277,7 @@ export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
       })
     );
     if (this.hass!.suspendWhenHidden !== false) {
-      // We close the connection to Home Assistant after being hidden for 5 minutes
+      // We close the connection to neostronghold after being hidden for 5 minutes
       this._hiddenTimeout = window.setTimeout(() => {
         this._hiddenTimeout = undefined;
         // setTimeout can be delayed in the background and only fire
@@ -323,6 +323,6 @@ export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
 
 declare global {
   interface HTMLElementTagNameMap {
-    "home-assistant": HomeAssistantAppEl;
+    "neostronghold": HomeAssistantAppEl;
   }
 }

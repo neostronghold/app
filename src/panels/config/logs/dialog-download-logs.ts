@@ -115,7 +115,7 @@ class DownloadLogsDialog extends LitElement {
     const logFileName =
       provider !== "core"
         ? `${provider}_${timeString}.log`
-        : `home-assistant_${timeString}.log`;
+        : `neostronghold_${timeString}.log`;
     const signedUrl = await getSignedPath(this.hass, downloadUrl);
     fileDownload(signedUrl.path, logFileName);
     this.closeDialog();

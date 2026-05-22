@@ -20,8 +20,8 @@ export class CloudDiscover extends LitElement {
             ${this.hass.localize(
               "ui.panel.config.voice_assistants.assistants.cloud.title",
               {
-                home_assistant_cloud: html`
-                  <span class="no-wrap">Home Assistant Cloud</span>
+                neostronghold_cloud: html`
+                  <span class="no-wrap">neostronghold Cloud</span>
                 `,
               }
             )}

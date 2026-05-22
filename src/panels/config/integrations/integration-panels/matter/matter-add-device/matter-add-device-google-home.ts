@@ -39,7 +39,7 @@ class MatterAddDeviceGoogleHome extends LitElement {
                     `ui.dialogs.matter-add-device.google_home.link_apps_services`
                   )}</b
                 >`,
-                home_assistant: html`<b>Home Assistant</b>`,
+                neostronghold: html`<b>neostronghold</b>`,
               }
             )}
             <span
@@ -50,7 +50,7 @@ class MatterAddDeviceGoogleHome extends LitElement {
               @click=${this._nextStep}
             >
               ${this.hass.localize(
-                `ui.dialogs.matter-add-device.google_home.no_home_assistant`
+                `ui.dialogs.matter-add-device.google_home.no_neostronghold`
               )}
             </span>
           </li>

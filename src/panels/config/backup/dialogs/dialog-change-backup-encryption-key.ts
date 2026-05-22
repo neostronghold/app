@@ -224,7 +224,7 @@ class DialogChangeBackupEncryptionKey extends LitElement implements HassDialog {
           <div class="done">
             <img
               src="/static/images/voice-assistant/hi.png"
-              alt="Casita Home Assistant logo"
+              alt="Casita neostronghold logo"
             />
             <h1>
               ${this.hass.localize(
