@@ -1,10 +1,10 @@
 import { type ComponentType, createElement } from "react";
 import { createRoot, type Root } from "react-dom/client";
 
-const roots = new Map<Node, Root>();
+const roots = new Map<Element | DocumentFragment, Root>();
 
 export function mountReact<P extends Record<string, unknown>>(
-  container: Node,
+  container: Element | DocumentFragment,
   Component: ComponentType<P>,
   props: P = {} as P
 ): void {
@@ -16,7 +16,7 @@ export function mountReact<P extends Record<string, unknown>>(
   root.render(createElement(Component, props));
 }
 
-export function unmountReact(container: Node): void {
+export function unmountReact(container: Element | DocumentFragment): void {
   const root = roots.get(container);
   if (root) {
     root.unmount();

@@ -216,7 +216,9 @@ const createRspackConfig = ({
     ].filter(Boolean),
       resolve: {
         extensions: [".ts", ".tsx", ".js", ".json"],
-      alias: {
+        alias: {
+          "src$": path.resolve(__dirname, "../src"),
+          "src/": path.resolve(__dirname, "../src/"),
         "lit/static-html$": "lit/static-html.js",
         "lit/decorators$": "lit/decorators.js",
         "lit/directive$": "lit/directive.js",

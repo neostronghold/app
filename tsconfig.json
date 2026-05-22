@@ -3,12 +3,16 @@
     // Language Options
     "target": "ES2021",
     "lib": ["ES2021", "DOM", "DOM.Iterable", "WebWorker"],
+    "jsx": "react-jsx",
     "experimentalDecorators": true,
     "useDefineForClassFields": false,
     // Modules
     "module": "ESNext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
+    "paths": {
+      "src/*": ["./src/*"]
+    },
     // Babel handles transpiling and no need for declaration files
     "noEmit": true,
     // Caching
