@@ -14,31 +14,31 @@ export const coreColorStyles = css`
     --ha-color-black: #000000;
     --ha-color-white: #ffffff;
 
-    /* primary */
-    --ha-color-primary-05: #001721;
-    --ha-color-primary-10: #002e3e;
-    --ha-color-primary-20: #004156;
-    --ha-color-primary-30: #006787;
-    --ha-color-primary-40: #009ac7;
-    --ha-color-primary-50: #18bcf2;
-    --ha-color-primary-60: #37c8fd;
-    --ha-color-primary-70: #7bd4fb;
-    --ha-color-primary-80: #b9e6fc;
-    --ha-color-primary-90: #dff3fc;
-    --ha-color-primary-95: #eff9fe;
+    /* primary — neostronghold electric cyan (HSL 196 94% 48% = #06b6d4) */
+    --ha-color-primary-05: #001a24;
+    --ha-color-primary-10: #003044;
+    --ha-color-primary-20: #004d64;
+    --ha-color-primary-30: #007894;
+    --ha-color-primary-40: #06b6d4;
+    --ha-color-primary-50: #2dcceb;
+    --ha-color-primary-60: #54d9f5;
+    --ha-color-primary-70: #80e3f5;
+    --ha-color-primary-80: #adeeff;
+    --ha-color-primary-90: #d0f5ff;
+    --ha-color-primary-95: #e8faff;
 
-    /* neutral */
-    --ha-color-neutral-05: #141414;
-    --ha-color-neutral-10: #202020;
-    --ha-color-neutral-20: #363636;
-    --ha-color-neutral-30: #4a4a4a;
-    --ha-color-neutral-40: #5e5e5e;
-    --ha-color-neutral-50: #7a7a7a;
-    --ha-color-neutral-60: #989898;
-    --ha-color-neutral-70: #b1b1b1;
-    --ha-color-neutral-80: #cccccc;
-    --ha-color-neutral-90: #e6e6e6;
-    --ha-color-neutral-95: #f3f3f3;
+    /* neutral — cosmic dark (HSL 228°) */
+    --ha-color-neutral-05: #0a0b13;
+    --ha-color-neutral-10: #101221;
+    --ha-color-neutral-20: #1a1c31;
+    --ha-color-neutral-30: #282b47;
+    --ha-color-neutral-40: #3c4063;
+    --ha-color-neutral-50: #545883;
+    --ha-color-neutral-60: #72779e;
+    --ha-color-neutral-70: #959ac1;
+    --ha-color-neutral-80: #bcc0db;
+    --ha-color-neutral-90: #dfe1f0;
+    --ha-color-neutral-95: #f0f1f8;
 
     /* orange */
     --ha-color-orange-05: #280700;
@@ -66,18 +66,18 @@ export const coreColorStyles = css`
     --ha-color-red-90: #ffdedc;
     --ha-color-red-95: #fff0ef;
 
-    /* green */
-    --ha-color-green-05: #031608;
-    --ha-color-green-10: #052310;
-    --ha-color-green-20: #0a3a1d;
-    --ha-color-green-30: #0a5027;
-    --ha-color-green-40: #036730;
-    --ha-color-green-50: #00883c;
-    --ha-color-green-60: #00ac49;
-    --ha-color-green-70: #5dc36f;
-    --ha-color-green-80: #93da98;
-    --ha-color-green-90: #c2f2c1;
-    --ha-color-green-95: #e3f9e3;
+    /* green — neostronghold emerald accent (HSL 160 84% 39% = #10b981) */
+    --ha-color-green-05: #022c15;
+    --ha-color-green-10: #054228;
+    --ha-color-green-20: #065f38;
+    --ha-color-green-30: #087c49;
+    --ha-color-green-40: #10b981;
+    --ha-color-green-50: #22c58e;
+    --ha-color-green-60: #34d399;
+    --ha-color-green-70: #6ee7b7;
+    --ha-color-green-80: #a7f3d0;
+    --ha-color-green-90: #d1fae5;
+    --ha-color-green-95: #ecfdf5;
   }
 `;
 

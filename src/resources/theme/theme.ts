@@ -1,4 +1,4 @@
-import { fontStyles } from "../roboto";
+import { fontStyles } from "../fonts";
 import { animationStyles } from "./animations.globals";
 import { colorDerivedVariables, colorStylesCollection } from "./color";
 import { coreDerivedVariables, coreStyles } from "./core.globals";
@@ -11,12 +11,12 @@ import {
 import { waMainDerivedVariables, waMainStyles } from "./wa.globals";
 
 export const themeStyles = [
+  fontStyles.toString(),
   coreStyles.toString(),
   mainStyles.toString(),
   typographyStyles.toString(),
   semanticStyles.toString(),
   ...colorStylesCollection,
-  fontStyles.toString(),
   waMainStyles.toString(),
   animationStyles.toString(),
 ].join("");

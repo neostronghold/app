@@ -341,40 +341,61 @@ export const colorStyles = css`
 
 export const darkColorStyles = css`
   html {
-    --primary-background-color: #111111;
-    --card-background-color: #1c1c1c;
-    --secondary-background-color: #282828;
-    --clear-background-color: #111111;
-    --primary-text-color: #e1e1e1;
-    --secondary-text-color: #9b9b9b;
-    --disabled-text-color: #6f6f6f;
-    --divider-color: rgba(225, 225, 225, 0.12);
-    --outline-color: rgba(225, 225, 225, 0.12);
-    --outline-hover-color: rgba(225, 225, 225, 0.24);
+    --primary-background-color: #0b0d17;
+    --card-background-color: #101221;
+    --secondary-background-color: #1a1c31;
+    --clear-background-color: #0b0d17;
+    --primary-text-color: #e9edf2;
+    --secondary-text-color: #8a96a8;
+    --disabled-text-color: #545883;
+    --divider-color: rgba(40, 43, 71, 0.8);
+    --outline-color: rgba(40, 43, 71, 0.8);
+    --outline-hover-color: rgba(60, 64, 99, 0.8);
     --shadow-color: rgba(0, 0, 0, 0.48);
 
-    --scrollbar-thumb-color: rgb(110, 110, 110);
+    --scrollbar-thumb-color: rgb(60, 64, 99);
 
-    --mdc-ripple-color: #aaaaaa;
+    --primary-color: #06b6d4;
+    --accent-color: #a855f7;
+    --dark-primary-color: #007894;
+    --darker-primary-color: #004d64;
+    --light-primary-color: #adeeff;
+    --rgb-primary-color: 6, 182, 212;
+    --rgb-accent-color: 168, 85, 247;
+    --rgb-primary-text-color: 233, 237, 242;
+    --rgb-secondary-text-color: 138, 150, 168;
+    --rgb-text-primary-color: 11, 13, 23;
+    --rgb-card-background-color: 18, 20, 31;
+    --rgb-warning-color: 255, 166, 0;
+    --rgb-error-color: 239, 68, 68;
+    --rgb-success-color: 16, 185, 129;
+    --rgb-info-color: 6, 182, 212;
+
+    --error-color: #ef4444;
+    --warning-color: #ffa600;
+    --success-color: #10b981;
+    --info-color: #06b6d4;
+
+    --mdc-ripple-color: #959ac1;
     --mdc-linear-progress-buffer-color: rgba(255, 255, 255, 0.1);
 
-    --input-idle-line-color: rgba(255, 255, 255, 0.42);
-    --input-hover-line-color: rgba(255, 255, 255, 0.87);
-    --input-disabled-line-color: rgba(255, 255, 255, 0.06);
-    --input-outlined-idle-border-color: rgba(255, 255, 255, 0.38);
-    --input-outlined-hover-border-color: rgba(255, 255, 255, 0.87);
-    --input-outlined-disabled-border-color: rgba(255, 255, 255, 0.06);
-    --input-fill-color: rgba(255, 255, 255, 0.05);
-    --input-disabled-fill-color: rgba(255, 255, 255, 0.02);
-    --input-ink-color: rgba(255, 255, 255, 0.87);
-    --input-label-ink-color: rgba(255, 255, 255, 0.6);
-    --input-disabled-ink-color: rgba(255, 255, 255, 0.37);
-    --input-dropdown-icon-color: rgba(255, 255, 255, 0.54);
+    --input-idle-line-color: rgba(149, 154, 193, 0.42);
+    --input-hover-line-color: rgba(233, 237, 242, 0.87);
+    --input-disabled-line-color: rgba(149, 154, 193, 0.06);
+    --input-outlined-idle-border-color: rgba(149, 154, 193, 0.38);
+    --input-outlined-hover-border-color: rgba(233, 237, 242, 0.87);
+    --input-outlined-disabled-border-color: rgba(149, 154, 193, 0.06);
+    --input-fill-color: rgba(26, 28, 49, 0.8);
+    --input-disabled-fill-color: rgba(26, 28, 49, 0.4);
+    --input-ink-color: rgba(233, 237, 242, 0.87);
+    --input-label-ink-color: rgba(138, 150, 168, 0.8);
+    --input-disabled-ink-color: rgba(84, 88, 131, 0.6);
+    --input-dropdown-icon-color: rgba(138, 150, 168, 0.7);
 
     --codemirror-keyword: #c792ea;
-    --codemirror-operator: #89ddff;
+    --codemirror-operator: #54d9f5;
     --codemirror-variable: #f07178;
-    --codemirror-variable-2: #eeffff;
+    --codemirror-variable-2: #e9edf2;
     --codemirror-variable-3: #decb6b;
     --codemirror-builtin: #ffcb6b;
     --codemirror-atom: #f78c6c;
@@ -382,7 +403,7 @@ export const darkColorStyles = css`
     --codemirror-def: #82aaff;
     --codemirror-string: #c3e88d;
     --codemirror-string-2: #f07178;
-    --codemirror-comment: #545454;
+    --codemirror-comment: #545883;
     --codemirror-tag: #ff5370;
     --codemirror-meta: #ffcb6b;
     --codemirror-attribute: #c792ea;
@@ -391,12 +412,13 @@ export const darkColorStyles = css`
     --codemirror-type: #decb6b;
     --energy-grid-return-color: #a280db;
     --map-filter: invert(0.9) hue-rotate(170deg) brightness(1.5) contrast(1.2) saturate(0.3);
-    --disabled-color: #464646;
+    --disabled-color: #3c4063;
+    --state-icon-color: #54d9f5;
 
-    --ha-button-primary-light-color: #4082a040;
-    --ha-button-warning-light-color: #917b54c1;
-    --ha-button-neutral-color: #d9dae0;
-    --ha-button-neutral-light-color: #6a7081;
+    --ha-button-primary-light-color: #06b6d440;
+    --ha-button-warning-light-color: #ffa60040;
+    --ha-button-neutral-color: #72779e;
+    --ha-button-neutral-light-color: #3c4063;
 
     --bar-box-shadow: 0 2px 12px var(--shadow-color);
   }
