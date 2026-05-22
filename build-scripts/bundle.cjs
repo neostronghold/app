@@ -72,15 +72,23 @@ module.exports.terserOptions = ({ latestBuild, isTestBuild }) => ({
 });
 
 /** @type {import('@rspack/core').SwcLoaderOptions} */
-module.exports.swcOptions = () => ({
+module.exports.swcOptions = ({ tsx = false } = {}) => ({
   jsc: {
     loose: true,
     externalHelpers: true,
     target: "ES2021",
     parser: {
-      syntax: "typescript",
+      syntax: tsx ? "typescript" : "typescript",
+      tsx,
       decorators: true,
     },
+    transform: tsx
+      ? {
+          react: {
+            runtime: "automatic",
+          },
+        }
+      : undefined,
   },
 });
 

@@ -65,7 +65,7 @@ const createRspackConfig = ({
     module: {
       rules: [
         {
-          test: /\.m?js$|\.ts$/,
+          test: /\.m?js$|\.tsx?$/,
           exclude: /node_modules[\\/]core-js/,
           use: (info) => [
             {
@@ -83,7 +83,7 @@ const createRspackConfig = ({
             },
             {
               loader: "builtin:swc-loader",
-              options: bundle.swcOptions(),
+              options: bundle.swcOptions({ tsx: true }),
             },
           ],
           resolve: {
@@ -92,6 +92,16 @@ const createRspackConfig = ({
           parser: {
             worker: ["*context.audioWorklet.addModule()", "..."],
           },
+        },
+        {
+          test: /\.css$/,
+          include: path.resolve(__dirname, "../src/theme-entry"),
+          use: [
+            {
+              loader: "postcss-loader",
+            },
+          ],
+          type: "asset/source",
         },
         {
           test: /\.css$/,
@@ -204,8 +214,8 @@ const createRspackConfig = ({
           },
         }),
     ].filter(Boolean),
-    resolve: {
-      extensions: [".ts", ".js", ".json"],
+      resolve: {
+        extensions: [".ts", ".tsx", ".js", ".json"],
       alias: {
         "lit/static-html$": "lit/static-html.js",
         "lit/decorators$": "lit/decorators.js",
