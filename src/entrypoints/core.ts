@@ -70,7 +70,9 @@ const authProm = isExternal
 
 const connProm = async (auth) => {
   try {
+    console.debug("NS: creating connection...");
     const conn = await createConnection({ auth });
+    console.debug("NS: connection created");
     clearUrlParams();
     return { auth, conn };
   } catch (err: any) {
@@ -100,7 +102,10 @@ if (__DEV__ && "performance" in window) {
   performance.mark("hass-start");
 }
 window.hassConnection = (authProm() as Promise<Auth | ExternalAuth>).then(
-  connProm
+  (auth) => {
+    console.debug("NS: auth resolved", { hassUrl });
+    return connProm(auth as Auth);
+  }
 );
 
 // This is set if app was somehow loaded before core.

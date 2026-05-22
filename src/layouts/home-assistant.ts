@@ -90,6 +90,13 @@ export class HomeAssistantAppEl extends QuickBarMixin(HassElement) {
       this.render = this.renderHass;
       this.update = super.update;
       removeLaunchScreen();
+    } else {
+      console.debug("NS: waiting for init", {
+        states: !!this.hass?.states,
+        config: !!this.hass?.config,
+        services: !!this.hass?.services,
+        migration: this._databaseMigration,
+      });
     }
     super.update(changedProps);
   }

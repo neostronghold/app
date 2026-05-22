@@ -12,6 +12,7 @@ export default <T extends Constructor<HassBaseEl>>(superClass: T) =>
 
     protected firstUpdated(changedProps: PropertyValues<this>) {
       super.firstUpdated(changedProps);
+      console.debug("NS: themes-mixin firstUpdated", { themeApplied: this._themeApplied });
       if (!this._themeApplied) {
         applyThemesOnElement(
           document.documentElement,
@@ -22,12 +23,15 @@ export default <T extends Constructor<HassBaseEl>>(superClass: T) =>
         );
         document.documentElement.style.backgroundColor = "#0b0d17";
         this._themeApplied = true;
+        console.debug("NS: theme applied");
       }
     }
 
     protected hassConnected() {
       super.hassConnected();
+      console.debug("NS: themes-mixin hassConnected");
       subscribeThemes(this.hass!.connection, (themes) => {
+        console.debug("NS: themes received", themes);
         this._updateHass({ themes: { ...themes, darkMode: true, theme: themes.default_theme || "default" } });
       });
     }
