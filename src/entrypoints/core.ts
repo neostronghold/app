@@ -26,6 +26,7 @@ import { subscribeThemes } from "../data/ws-themes";
 import { subscribeUser } from "../data/ws-user";
 import type { ExternalAuth } from "../external_app/external_auth";
 
+console.warn("NS: core.ts loaded");
 window.name = MAIN_WINDOW_NAME;
 (window as any).frontendVersion = __VERSION__;
 
@@ -70,9 +71,9 @@ const authProm = isExternal
 
 const connProm = async (auth) => {
   try {
-    console.debug("NS: creating connection...");
+    console.warn("NS: creating connection...");
     const conn = await createConnection({ auth });
-    console.debug("NS: connection created");
+    console.warn("NS: connection created");
     clearUrlParams();
     return { auth, conn };
   } catch (err: any) {
@@ -103,7 +104,7 @@ if (__DEV__ && "performance" in window) {
 }
 window.hassConnection = (authProm() as Promise<Auth | ExternalAuth>).then(
   (auth) => {
-    console.debug("NS: auth resolved", { hassUrl });
+    console.warn("NS: auth resolved", { hassUrl });
     return connProm(auth as Auth);
   }
 );

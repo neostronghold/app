@@ -50,7 +50,7 @@ export const connectionMixin = <T extends Constructor<HassBaseEl>>(
     private __backendPingInterval?: ReturnType<typeof setInterval>;
 
     protected initializeHass(auth: Auth, conn: Connection) {
-      console.debug("NS: initializeHass called");
+      console.warn("NS: initializeHass called");
       const language = getLocalLanguage();
 
       this.hass = {
@@ -224,7 +224,7 @@ export const connectionMixin = <T extends Constructor<HassBaseEl>>(
 
       setDebugConnection(this.hass.debugConnection);
 
-      console.debug("NS: initializeHass complete, calling hassConnected");
+      console.warn("NS: initializeHass complete, calling hassConnected");
       this.hassConnected();
     }
 
